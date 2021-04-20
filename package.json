@@ -4,7 +4,8 @@
   "description": "My coin wallet project with upbit Open API",
   "main": "src/index.ts",
   "scripts": {
-    "start": "nodemon --exec ts-node -r tsconfig-paths/register --files src/index.ts"
+    "start": "nodemon --exec ts-node -r tsconfig-paths/register --files src/index.ts",
+    "start:prod": "pm2-docker start ts-node -- -r tsconfig-paths/register --files ./src/index.ts"
   },
   "repository": {
     "type": "git",
