@@ -4,5 +4,5 @@ COPY package*.json ./
 RUN npm install --silent
 RUN npm install -g pm2
 COPY . .
-CMD [ "npm", "start:prod" ]
+CMD [ "npm", "run", "start:prod" ]
 EXPOSE 3000
