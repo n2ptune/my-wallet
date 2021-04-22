@@ -9,6 +9,9 @@ router.use((req, res, next) => {
 })
 
 router.get('/', (req, res) => {
+  // getConnection().then((conn) => {
+  //   res.status(200).send(`${routine.value.length}, ${conn.name}`)
+  // })
   res.status(200).send(`afqfq ${routine.value.length}`)
 })
 
