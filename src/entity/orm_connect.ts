@@ -14,4 +14,4 @@ const connectORM: () => Promise<Connection> = async () => {
   })
 }
 
-connectORM()
+export default connectORM().then((result) => result)

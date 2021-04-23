@@ -1,6 +1,7 @@
 import * as express from 'express'
 import '@/plugins/env'
 import '@/entity/orm_connect'
+import '@/service/schedule'
 import MoneyController from './controller/money'
 
 const app = express()
