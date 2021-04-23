@@ -18,8 +18,8 @@ const routine = {
   }
 }
 
-global.setInterval(() => {
+setInterval(() => {
   routine.run()
-}, 500)
+})
 
 export default routine
